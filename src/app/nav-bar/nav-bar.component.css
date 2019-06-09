@@ -1,0 +1,26 @@
+
+.navbar {
+  background-color: red;
+}
+
+.navbarContent {
+  display: flex;
+  flex-direction: row;
+}
+
+.homeBtn {
+  margin-left: 45em;
+}
+
+.text {
+  color: white;
+}
+
+#churchLogo {
+  height: 200px;
+  width: auto;
+}
+
+.noBackground {
+  background-color: white;
+}
