@@ -1,0 +1,18 @@
+.profileCard {
+  width: 50%;
+}
+
+
+img {
+  width: 150px;
+  height: 150px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 35%;
+}
+
+
+mat-card-subtitle {
+  font: bold;
+}

@@ -114,9 +114,9 @@ THE SOFTWARE.
 
 @angular/material/card
 
-@angular/material/menu
+@angular/material/icon
 
-@angular/material/sidenav
+@angular/material/menu
 
 @angular/material/toolbar
 

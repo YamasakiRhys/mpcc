@@ -11,13 +11,15 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ContactComponent } from './Pages/contact/contact.component';
+import { StaffComponent } from './Pages/staff/staff.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavBarComponent,
-    ContactComponent
+    ContactComponent,
+    StaffComponent
   ],
   imports: [
     BrowserModule,

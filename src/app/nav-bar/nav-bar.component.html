@@ -1,13 +1,12 @@
-
-
+<div class="container" >
   <mat-toolbar class="navbar text navbarContent">
     <mat-toolbar-row>
-      <h1><img id="churchLogo" src="http://montebelloucc.org/images/100YrLogoSmall.jpg"
-        alt="Montebello Plymouth Congregational Church logo">Welcome to Montebello Plymouth Congregational Church</h1>
-      <button mat-button routerLink="/home" class="homeBtn">Home</button>
-      <button mat-button [matMenuTriggerFor]="aboutUsMenu">About Us</button>
+      <h1>Welcome to Montebello Plymouth Congregational Church</h1>
+
+      <button mat-button routerLink="/home" class="homeBtn"><mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon> Home</button>
+      <button mat-button [matMenuTriggerFor]="aboutUsMenu"><mat-icon aria-hidden="false" aria-label="questionmark icon"></mat-icon>About Us</button>
       <mat-menu #aboutUsMenu="matMenu" yPosition="below">
-        <button mat-menu-item>Our Staff</button>
+        <button mat-menu-item routerLink="/staff">Our Staff</button>
         <button mat-menu-item>Our Mission</button>
         <button mat-menu-item>Our Logo</button>
         <button mat-menu-item>Our History</button>
@@ -15,20 +14,19 @@
       </mat-menu>
       <button mat-button [matMenuTriggerFor]="churchMinistries">Church Ministries</button>
       <mat-menu #churchMinistries="matMenu" yPosition="below">
-          <button mat-menu-item>Our Staff</button>
-          <button mat-menu-item>Our Mission</button>
-          <button mat-menu-item>Our Logo</button>
-          <button mat-menu-item>Our History</button>
-          <button mat-menu-item>Photos</button>
-        </mat-menu>
+        <button mat-menu-item>Follow Christ</button>
+        <button mat-menu-item>Assemble in Faith</button>
+        <button mat-menu-item>Involve Your Family</button>
+        <button mat-menu-item>Teach to Serve</button>
+        <button mat-menu-item>Help Others</button>
+      </mat-menu>
       <button mat-button>Facilities & Groups</button>
       <button mat-button routerLink="/contact">Contact Us</button>
-    </mat-toolbar-row>
-    <mat-toolbar-row class="noBackground">
-       Image Carasoul will go here.
+
     </mat-toolbar-row>
   </mat-toolbar>
-<div>
+</div>
+<!-- <div class="container">
   <mat-drawer-container>
     <mat-drawer #drawer>
       some side nav
@@ -37,4 +35,4 @@
       Testing Drawer
     </mat-drawer-content>
   </mat-drawer-container>
-</div>
+</div> -->
