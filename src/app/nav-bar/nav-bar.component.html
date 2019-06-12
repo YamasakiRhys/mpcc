@@ -1,11 +1,9 @@
 
-<div class="navbarContent">
 
-  <img id="churchLogo" src="http://montebelloucc.org/images/100YrLogoSmall.jpg"
-    alt="Montebello Plymouth Congregational Church logo">
-  <mat-toolbar class="navbar text">
+  <mat-toolbar class="navbar text navbarContent">
     <mat-toolbar-row>
-      <h1>Welcome to Montebello Plymouth Congregational Church</h1>
+      <h1><img id="churchLogo" src="http://montebelloucc.org/images/100YrLogoSmall.jpg"
+        alt="Montebello Plymouth Congregational Church logo">Welcome to Montebello Plymouth Congregational Church</h1>
       <button mat-button routerLink="/home" class="homeBtn">Home</button>
       <button mat-button [matMenuTriggerFor]="aboutUsMenu">About Us</button>
       <mat-menu #aboutUsMenu="matMenu" yPosition="below">
@@ -24,13 +22,12 @@
           <button mat-menu-item>Photos</button>
         </mat-menu>
       <button mat-button>Facilities & Groups</button>
-      <button mat-button>Contact Us</button>
+      <button mat-button routerLink="/contact">Contact Us</button>
     </mat-toolbar-row>
     <mat-toolbar-row class="noBackground">
-      Image Carasoul will go here.
+       Image Carasoul will go here.
     </mat-toolbar-row>
   </mat-toolbar>
-</div>
 <div>
   <mat-drawer-container>
     <mat-drawer #drawer>

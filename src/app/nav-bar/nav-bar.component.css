@@ -4,7 +4,7 @@
 }
 
 .navbarContent {
-  display: flex;
+  display: flexbox;
   flex-direction: row;
 }
 
@@ -13,10 +13,10 @@
 }
 
 #churchLogo {
-  height: 200px;
+  height: 100px;
   width: auto;
 }
 
 .noBackground {
-  background-color: white;
+  text-align: center;
 }
