@@ -12,6 +12,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ContactComponent } from './Pages/contact/contact.component';
 import { StaffComponent } from './Pages/staff/staff.component';
+import {MenubarModule} from 'primeng/menubar';
+
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import { StaffComponent } from './Pages/staff/staff.component';
     MatListModule,
     MatMenuModule,
     MatCardModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MenubarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

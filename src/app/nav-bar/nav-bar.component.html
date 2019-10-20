@@ -1,10 +1,10 @@
-<div class="container" >
+<ng-container class="container" >
   <mat-toolbar class="navbar text navbarContent">
     <mat-toolbar-row>
       <h1>Welcome to Montebello Plymouth Congregational Church</h1>
 
       <button mat-button routerLink="/home" class="homeBtn"><mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon> Home</button>
-      <button mat-button [matMenuTriggerFor]="aboutUsMenu"><mat-icon aria-hidden="false" aria-label="questionmark icon"></mat-icon>About Us</button>
+      <button mat-button [matMenuTriggerFor]="aboutUsMenu">About Us</button>
       <mat-menu #aboutUsMenu="matMenu" yPosition="below">
         <button mat-menu-item routerLink="/staff">Our Staff</button>
         <button mat-menu-item>Our Mission</button>
@@ -20,19 +20,16 @@
         <button mat-menu-item>Teach to Serve</button>
         <button mat-menu-item>Help Others</button>
       </mat-menu>
-      <button mat-button>Facilities & Groups</button>
+      <button mat-button [matMenuTriggerFor]="facilities">Facilities & Groups</button>
+      <mat-menu #facilities="matMenu" yPosition="below">
+        <button mat-menu-item>Jets/Jetts Basketball</button>
+        <button mat-menu-item>Ikebana Class</button>
+        <button mat-menu-item>Line Dance Class</button>
+        <button mat-menu-item>Ballroom Dance</button>
+      </mat-menu>
       <button mat-button routerLink="/contact">Contact Us</button>
 
     </mat-toolbar-row>
   </mat-toolbar>
-</div>
-<!-- <div class="container">
-  <mat-drawer-container>
-    <mat-drawer #drawer>
-      some side nav
-    </mat-drawer>
-    <mat-drawer-content>
-      Testing Drawer
-    </mat-drawer-content>
-  </mat-drawer-container>
-</div> -->
+</ng-container>
+

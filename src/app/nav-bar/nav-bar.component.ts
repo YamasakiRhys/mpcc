@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
+import {MenubarModule} from 'primeng/menubar';
+import {MenuItem} from 'primeng/api';
 
 @Component({
   selector: 'app-nav-bar',
@@ -9,16 +11,6 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent {
-
-  events: string[] = [];
-  opened: boolean;
-
-  shouldRun = [/(^|\.)plnkr\.co$/, /(^|\.)stackblitz\.io$/].some(h => h.test(window.location.host));
-
-  // isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
-  //   .pipe(
-  //     map(result => result.matches)
-  //   );
 
   constructor(private breakpointObserver: BreakpointObserver) {}
 
